@@ -8,28 +8,28 @@ export default function Navbar() {
   return (
     <NavigationMenu.Root className={`flex justify-center bg-beige`}>
       <NavigationMenu.List
-        className={`${cinzel.className} flex text-dim text-4xl`}
+        className={`${cinzel.className} flex text-dim text-2xl`}
       >
-        <NavigationMenu.Item className="py-12">
+        <NavigationMenu.Item className="py-8">
           <NavigationMenu.Link
             href="/"
-            className="hover:bg-gold py-12 px-36"
+            className="hover:bg-gold py-8 px-36"
           >
             Home
           </NavigationMenu.Link>
         </NavigationMenu.Item>
-        <NavigationMenu.Item className="py-12">
+        <NavigationMenu.Item className="py-8">
           <NavigationMenu.Link
             href="../pages/linguistic-determinism"
-            className="hover:bg-gold py-12 px-36"
+            className="hover:bg-gold py-8 px-36"
           >
             Linguistic Determinism
           </NavigationMenu.Link>
         </NavigationMenu.Item>
-        <NavigationMenu.Item className="py-12">
+        <NavigationMenu.Item className="py-8">
           <NavigationMenu.Link
             href="../pages/linguistic-determinism"
-            className="hover:bg-gold py-12 px-36"
+            className="hover:bg-gold py-8 px-36"
           >
             Wiki
           </NavigationMenu.Link>
