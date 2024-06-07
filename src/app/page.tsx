@@ -1,10 +1,15 @@
+"use client";
 import {
   Cinzel_Decorative,
   PT_Serif,
-  Lora,
   Raleway,
   Playfair_Display,
 } from "next/font/google";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const cinzel = Cinzel_Decorative({
   weight: ["400", "700"],
   subsets: ["latin"],
@@ -19,6 +24,11 @@ const raleway = Raleway({
 });
 const pt_serif = PT_Serif({ weight: "700", subsets: ["latin"] });
 export default function Page() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1500,
+    });
+  })
   return (
     <main className="flex min-h-screen flex-col items-center px-24 bg-[#F7F2E9] text-[#2B292B]">
       <div className="bg-header relative h-screen w-screen overflow-hidden rounded-lg">
@@ -30,10 +40,11 @@ export default function Page() {
             height="200"
             viewBox="0 0 24 24"
             stroke-width="1.5"
-            stroke="#403C34"
+            stroke="#F7F2E9"
             fill="none"
             stroke-linecap="round"
             stroke-linejoin="round"
+            data-aos="zoom-in"
           >
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M17 13v-6l-5 4l-5 -4v6l5 4z" />
@@ -42,8 +53,8 @@ export default function Page() {
       </div>
 
       <div>
-        <div className="w-screen h-4 mt-24 bg-gold"></div>
-        <div className="flex items-center justify-center mt-32">
+        <div className="w-screen h-4 mt-28 bg-gold"></div>
+        <div data-aos = "zoom-out" className="flex items-center justify-center mt-32">
           <div className="h-2 w-[200px] bg-dim w-full mx-8 "></div>
           <span
             className={`${cinzel.className} font-bold text-center text-8xl mx-4`}
@@ -64,11 +75,12 @@ export default function Page() {
           }}
         />
         <div className="w-screen h-4 bg-gold text-grey font-bold"></div>
-        <p className={`${play.className} text-3xl my-20 text-center`}>
+        <p data-aos="fade-in" className={`${play.className} text-3xl my-24 text-center`}>
           Chat with chatbots representing abandoned philosophies...
         </p>
         <div className="flex w-full bg-gold text-beige">
           <img
+            data-aos="flip-up"
             src="https://miro.medium.com/v2/resize:fit:938/1*ARpXbGZtzKkHbojQkawQKQ.jpeg"
             className="mr-8 w-[600px] h-full"
           />
@@ -91,6 +103,7 @@ export default function Page() {
             </p>
           </div>
           <img
+            data-aos="flip-right"
             src="https://miro.medium.com/v2/resize:fit:938/1*ARpXbGZtzKkHbojQkawQKQ.jpeg"
             className="ml-8 w-full h-full"
           />
