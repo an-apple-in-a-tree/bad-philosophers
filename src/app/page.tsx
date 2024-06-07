@@ -54,6 +54,7 @@ export default function Home() {
         </div>
         <img
           src="https://www.pngmart.com/files/23/Gold-Swirl-PNG-Isolated-File.png"
+          alt="Gold floral design"
           className="mx-auto mb-8"
           style={{
             width: 700,
@@ -73,9 +74,9 @@ export default function Home() {
           />
 
           <div className="h-96 w-full pb-16">
-            <p className={`{${raleway.className} text-2xl p-8 }`}>
+            <p className={`${raleway.className} text-2xl p-8`}>
               Where the wisdom of the past comes to life through engaging
-              conversations with chatbots embodying the world's forgotten
+              conversations with chatbots embodying the world&apos;s forgotten
               schools of thought.
             </p>
           </div>
@@ -83,9 +84,9 @@ export default function Home() {
 
         <div className="flex w-full bg-dim text-beige">
           <div className="h-96 w-full pb-16">
-            <p className="p-8 text-2xl">
+            <p className={`${raleway.className} text-2xl p-8`}>
               Where the wisdom of the past comes to life through engaging
-              conversations with chatbots embodying the world's forgotten
+              conversations with chatbots embodying the world&apos;s forgotten
               schools of thought.
             </p>
           </div>
