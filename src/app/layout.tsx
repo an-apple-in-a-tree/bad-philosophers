@@ -19,7 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar />
+        <div style={{ position: "sticky", top: 0, zIndex: 1 }}>
+          <Navbar />
+        </div>
+
         {children}
         <Footer />
         </body>

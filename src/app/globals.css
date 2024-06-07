@@ -26,6 +26,14 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.bg-header {
+  background: linear-gradient(rgba(199, 161, 86, 0.25), rgba(0, 0, 0, 0.25)),
+    url("https://external-preview.redd.it/-fKPBaVN7pa4BPMwmwVDh7rgxoFTcv0yCoVnKs0SEpE.jpg?width=1080&crop=smart&auto=webp&s=61175cdd843d3a00ecd3922c5c6d8df224f7dc76") center center
+      no-repeat;
+  background-attachment: fixed;
+  background-size: cover; 
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
