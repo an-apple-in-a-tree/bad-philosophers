@@ -18,7 +18,7 @@ const raleway = Raleway({
   subsets: ["latin"],
 });
 const pt_serif = PT_Serif({ weight: "700", subsets: ["latin"] });
-export default function Home() {
+export default function Page() {
   return (
     <main className="flex min-h-screen flex-col items-center px-24 bg-[#F7F2E9] text-[#2B292B]">
       <div className="bg-header relative h-screen w-screen overflow-hidden rounded-lg">
